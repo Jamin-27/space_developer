@@ -10,12 +10,13 @@
     font-family: josh;
     src: url("../font/Jost-Light.ttf");
 }
+
 @font-face {
     font-family: urbanist;
     src: url("../font/Urbanist-Medium.ttf");
 }
 
-body{
+body {
     font-family: "urbanist";
     font-weight: 500;
 }
@@ -123,10 +124,15 @@ body{
 
 @media only screen and (max-width: 900px) {
     .navbar-brand {
-        width: 200px;
+        width: 70px;
     }
 }
 
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+    padding-top: 10px;
+    text-align: center;
+}
 
 /* slider */
 .hero-slider {
@@ -372,6 +378,22 @@ margin-bottom: 30px;
     }
 }
 
+@media screen and (max-width:600px){
+    .hero-slider{
+        margin-top: 40px;
+    }
+
+    .hero-slider .carousel-cell .slide-content .title{
+        font-size: 1em;
+        padding: 0px 20px;
+    }
+
+    .flickity-prev-next-button .flickity-button-icon {
+        width: 30%;
+        height: 30%;
+    }
+}
+
 /* about us */
 
 #About-us {
@@ -428,6 +450,10 @@ margin-bottom: 30px;
 
 }
 
+.paragraph{
+    text-align: justify;
+}
+
 /* property Section */
 
 .property {
@@ -457,7 +483,7 @@ margin-bottom: 30px;
     text-transform: uppercase;
 }
 
-.property-content{
+.property-content {
     text-align: justify;
     font-size: 1.2em;
 }
@@ -675,7 +701,7 @@ margin-bottom: 30px;
 
 /* footer */
 
-footer{
+footer {
     background-color: var(--colorBlack);
     color: var(--colorWhite);
     padding-top: 30px;
@@ -685,26 +711,26 @@ footer{
     text-align: center;
 } */
 
-.about-footer{
+.about-footer {
     font-size: 1.1em;
     text-align: justify;
 }
 
-footer .links p{
+footer .links p {
     font-size: 2em;
     font-family: 'josh';
     font-weight: 400;
 }
 
-footer .links a{
+footer .links a {
     font-size: 1.8em;
 }
 
-.social-icon{
+.social-icon {
     font-size: 2em;
 }
 
-.social-icon i{
+.social-icon i {
     padding: 0 5px;
 }
 
