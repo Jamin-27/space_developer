@@ -64,6 +64,8 @@ setTimeout(function () {
             margin: 0,
             responsiveClass: true,
             nav: false,
+            autoPlay: true,
+            autoplayTimeout: 1000,
             responsive: {
                 0: {
                     items: 1,

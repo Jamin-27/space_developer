@@ -1,6 +1,28 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+
+@font-face {
+    font-family: poppins;
+    src: url("../font/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: josh;
+    src: url("../font/Jost-Light.ttf");
+}
+@font-face {
+    font-family: urbanist;
+    src: url("../font/Urbanist-Medium.ttf");
+}
+
+body{
+    font-family: "urbanist";
+    font-weight: 500;
+}
+
 :root {
-    --colorPrimary: #95732D;
-    --colorSecondary: #f1a918;
+    --colorPrimary: #e2912a;
+    --colorSecondary: #eb9b2d;
     --colorWhite: #ffffff;
     --colorOffWhite: #f7f7f7;
     --colorBorderWhite: #dbe4e9;
@@ -9,6 +31,26 @@
     --colorBackgroundBlack: #343a40bd;
     --colorBackgroundOverlay: #00000070;
     --colorWhiteOverlay: rgba(212, 210, 212, 1);
+}
+
+/* common */
+
+.btn {
+    background-color: var(--colorPrimary);
+    color: white;
+    text-transform: capitalize !important;
+}
+
+.btn:hover {
+    background-color: var(--colorSecondary);
+}
+
+.Heading {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: "josh";
+    font-weight: 300;
+    color: var(--colorPrimary);
 }
 
 /* Navbar Section */
@@ -374,13 +416,21 @@ margin-bottom: 30px;
 /* property Section */
 
 .property {
-    background-color: white;
+    background: linear-gradient(to bottom, var(--colorPrimary), var(--colorSecondary));
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.267);
     border-radius: 10px;
+    color: white;
 }
 
-.carousel-item img {
+/* .property .carousel-item{
+    width: 100%;
+    height: 100%;
+} */
+
+.property .carousel-item img {
     border-radius: 10px;
+
+    /* height: 100%; */
 }
 
 .property-header {
@@ -391,6 +441,10 @@ margin-bottom: 30px;
 
 
 /* gallery */
+
+#gallery_section {
+    background-color: #F1F1F1;
+}
 
 .masonry {
     /* Masonry container */
@@ -423,11 +477,11 @@ margin-bottom: 30px;
 }
 
 .item:hover {
-    -ms-transform: scale(1.5);
+    -ms-transform: scale(1.1);
     /* IE 9 */
-    -webkit-transform: scale(1.5);
+    -webkit-transform: scale(1.1);
     /* Safari 3-8 */
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .item img {
@@ -497,8 +551,8 @@ margin-bottom: 30px;
             width: 10px;
             border-radius: 50%;
             display: block;
-            background: #fff;
-            border: 2px solid #01b0f8;
+            background: var(--colorPrimary);
+            border: 2px solid var(--colorSecondary);
             margin: 0 5px;
         }
 
@@ -506,7 +560,7 @@ margin-bottom: 30px;
             box-shadow: none;
 
             span {
-                background: #01b0f8;
+                background: var(--colorPrimary);
                 box-shadow: none;
                 height: 12px;
                 width: 12px;
@@ -516,8 +570,8 @@ margin-bottom: 30px;
     }
 
     .card {
-        background: #fff;
-        box-shadow: 0 8px 30px -7px #c9dff0;
+        background: #F1F1F1;
+        box-shadow: 0 8px 30px -7px #919191;
         margin: 0 20px;
         padding: 0 10px;
         border-radius: 20px;
@@ -527,14 +581,15 @@ margin-bottom: 30px;
             max-width: 100px;
             border-radius: 50%;
             margin: 15px auto 0;
-            box-shadow: 0 8px 20px -4px #95abbb;
+            box-shadow: 0 8px 20px -4px #c6c7c9;
             width: 100px;
             height: 100px;
         }
 
         h5 {
-            color: #01b0f8;
+            color: var(--colorPrimary);
             font-size: 21px;
+            font-family: 'josh';
             line-height: 1.3;
 
             span {
@@ -545,7 +600,7 @@ margin-bottom: 30px;
 
         p {
             font-size: 18px;
-            color: #555;
+            color: #000000;
             padding-bottom: 15px;
         }
     }
@@ -570,7 +625,7 @@ margin-bottom: 30px;
             max-width: 100%;
             height: 120px;
             width: 120px;
-            background-color: rgba(0, 0, 0, 0.123);
+            background-color: rgba(255, 255, 255, 0.123);
         }
     }
 }
@@ -593,4 +648,44 @@ margin-bottom: 30px;
     button.owl-dot {
         outline: 0;
     }
+}
+
+/* footer */
+
+footer{
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
+    padding-top: 30px;
+}
+
+/* footer .links{
+    text-align: center;
+} */
+
+.about-footer{
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+footer .links p{
+    font-size: 2em;
+    font-family: 'josh';
+    font-weight: 400;
+}
+
+footer .links a{
+    font-size: 1.8em;
+}
+
+.social-icon{
+    font-size: 2em;
+}
+
+.social-icon i{
+    padding: 0 5px;
+}
+
+.copyright {
+    font-size: 1.2em;
+    text-align: center;
 }

@@ -51,7 +51,7 @@
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         <a class="nav-link" href="#">About Us</a>
-                        <a class="nav-link" href="#">Sky27</a>
+                        <a class="nav-link" href="#">SKY27</a>
                         <a class="nav-link" href="#">Contact Us</a>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
 
         <!-- slider -->
         <section id="slider_section">
-            <div class="hero-slider" data-carousel  data-flickity='{ "autoPlay": true }'>
+            <div class="hero-slider" data-carousel data-flickity='{ "autoPlay": true }'>
 
                 <div class="carousel-cell" style="background-image:url(../img/slider-img/new-banner1.jpg);">
                     <div class="overlay"></div>
@@ -100,7 +100,7 @@
                 <div class="container">
                     <div class="row row-cols-1 row-cols-md-6">
                         <div class="col-md-6 p-md-5 ">
-                            <h4 class="Sub_Heading">About Us</h4>
+                            <h4 class="Heading">About Us</h4>
                             <!-- <h4>At Space Developer,</h4> -->
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -110,14 +110,13 @@
                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                                 mollit anim id est laborum.
                             </p>
-                            <button class="pro-button effectMoveGradient" data-bs-toggle="modal"
-                                data-bs-target="#popupModal">
+                            <button class="btn" data-bs-toggle="modal" data-bs-target="#popupModal">
                                 <i class="fa-solid fa-download nav-icon"></i>
                                 Download Brochure
                             </button>
 
                         </div>
-                        <div class="col-md-6 overhead">
+                        <div class="col-md-6 overhead pt-3">
                             <div class="Over_img">
                                 <img src="../img/over/Living2.jpg" alt="" class="img-fluid">
                             </div>
@@ -132,11 +131,14 @@
         </Section>
 
         <!-- property -->
-        <section id="Property_section">
+        <section id="Property_section" class="p-3">
+            <div class="container">
+                <h4 class="Heading">Properties</h4>
+            </div>
             <div class="container my-5">
                 <div class="property">
                     <div class="row row-cols-1 ">
-                        <div class="col-md-5">
+                        <div class="col-md-5 py-5 ps-5 pe-3">
                             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -159,7 +161,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-md-7 px-5">
+                        <div class="col-md-7 py-5 ps-3 pe-5">
                             <div class="property-header d-flex justify-content-between">
                                 <span>sky27</span>
                                 <span>₹ 80 Lakhs</span>
@@ -171,7 +173,7 @@
                                     amidst the greens and best of connectivity at one of Bhandup West's well-connected
                                     addresses.
                                 </p>
-                                <button>Know more</button>
+                                <button class="btn">Know more</button>
                             </div>
                         </div>
                     </div>
@@ -180,9 +182,11 @@
         </section>
 
         <!-- gallery -->
-        <section id="gallery">
-
-            <div class="container">
+        <section id="gallery_section">
+            <div class="container pt-3">
+                <h4 class="Heading text-center">Gallery</h4>
+            </div>
+            <div class="container pb-3">
 
                 <div class="masonry">
                     <div class="item">
@@ -237,9 +241,10 @@
 
         <!-- testimonals -->
         <section id="Testimonials">
-
-            <div class="gtco-testimonials">
-                <h2>Testimonials Carousel - Cards Comments</h2>
+            <div class="container pt-4">
+                <h4 class="Heading text-center">Testimonials</h4>
+            </div>
+            <div class="gtco-testimonials pb-4">
                 <div class="owl-carousel owl-carousel1 owl-theme">
                     <div>
                         <div class="card text-center">
@@ -307,6 +312,47 @@
 
     </main>
 
+    <footer>
+        <div class="container px-5">
+            <div class="row row-cols-1 row-cols-md-4">
+                <div class="col-md-4">
+                    <div class="about-footer">
+                        <img src="../img/logo/logo2.png" alt="" height="150px">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quod harum modi maiores.
+                            Accusamus quasi quaerat expedita, dignissimos alias excepturi odit placeat ipsam iure
+                            consectetur beatae velit quidem exercitationem</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <div class="links">
+                                <P>Quick Links</P>
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link" href="#">About Us</a>
+                                <a class="nav-link" href="#">SKY27</a>
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="social-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright py-2">
+            <p>&copy; 2024 Space Developer. All Rights Reserved.</p>
+        </div>
+    </footer>
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -316,9 +362,6 @@
     <!-- jquery -->
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
-
-
-
 
 </body>
 
