@@ -87,9 +87,9 @@ body{
     border-radius: 5px;
 }
 
-.nav-link:hover {
+/* .nav-link:hover {
     background-color: var(--colorOffWhite);
-}
+} */
 
 .navbar-nav i {
     margin-right: 10px;
