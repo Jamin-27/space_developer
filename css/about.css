@@ -19,8 +19,8 @@ body {
 }
 
 :root {
-    --colorPrimary: #e2912a;
-    --colorSecondary: #eb9b2d;
+    --colorPrimary: #2c3d4d;
+    --colorSecondary: #2b5c8a;
     --colorWhite: #ffffff;
     --colorOffWhite: #f7f7f7;
     --colorBorderWhite: #dbe4e9;
@@ -126,7 +126,7 @@ body {
 
 @media only screen and (max-width: 900px) {
     .navbar-brand {
-        width: 200px;
+        width: 70px;
     }
 }
 
@@ -149,6 +149,12 @@ body {
     font-size: 4em;
     text-transform: uppercase;
     color: white;
+}
+
+@media screen and (max-width:600px) {
+    #banner-section .content {
+        font-size: 1.5em;
+    }
 }
 
 .content-img {
@@ -177,6 +183,7 @@ body {
 #FAQ .text {
     font-size: 1.5em;
     line-height: 127%;
+    color: white;
     /* 23/18 */
 }
 
@@ -188,7 +195,7 @@ body {
 
 #FAQ .process {
     padding: 45px 0 35px 0;
-    font-family: "jase";
+    font-family: "urbanist";
 }
 
 @media (max-width: 767.98) {
@@ -254,7 +261,7 @@ body {
 
 #FAQ .accordions__number {
     font-size: 2em;
-    font-family: Space Grotesk;
+    font-family: "jash";
     padding-right: 1.5625rem;
     font-weight: 500;
 }
@@ -273,8 +280,8 @@ body {
 }
 
 #FAQ .accordions__title {
-    font-family: Space Grotesk;
-    font-size: 1.8em;
+    font-family: "jash";
+    font-size: 2em;
     font-weight: 500;
     text-transform: capitalize;
     flex: 1 1 auto;
@@ -388,7 +395,7 @@ body {
 }
 
 #FAQ .open {
-    background-color: var(--colorSecondary);
+    background: linear-gradient(to bottom, var(--colorPrimary), var(--colorSecondary));
 }
 
 #FAQ .open .accordions__icon {

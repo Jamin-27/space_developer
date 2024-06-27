@@ -22,8 +22,8 @@ body {
 }
 
 :root {
-    --colorPrimary: #e2912a;
-    --colorSecondary: #eb9b2d;
+    --colorPrimary: #2c3d4d;
+    --colorSecondary: #2b5c8a;
     --colorWhite: #ffffff;
     --colorOffWhite: #f7f7f7;
     --colorBorderWhite: #dbe4e9;
@@ -378,12 +378,12 @@ margin-bottom: 30px;
     }
 }
 
-@media screen and (max-width:600px){
-    .hero-slider{
+@media screen and (max-width:600px) {
+    .hero-slider {
         margin-top: 40px;
     }
 
-    .hero-slider .carousel-cell .slide-content .title{
+    .hero-slider .carousel-cell .slide-content .title {
         font-size: 1em;
         padding: 0px 20px;
     }
@@ -450,20 +450,43 @@ margin-bottom: 30px;
 
 }
 
-.paragraph{
+.paragraph {
     text-align: justify;
 }
 
 /* property Section */
 
 .property {
+    padding: 20px;
+    border: 2px solid black;
     background: linear-gradient(to bottom, var(--colorPrimary), var(--colorSecondary));
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.267);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.295);
     border-radius: 10px;
     color: white;
 }
 
+.blnk-button {
+    animation: blink 3s linear infinite;
+    /* text-transform: uppercase; */
+}
 
+@keyframes blink {
+    0% {
+        color: var(--colorBlack);
+    }
+
+    49% {
+        color: var(--colorWhite);
+    }
+
+    50% {
+        color: var(--colorBlack);
+    }
+
+    100% {
+        color: var(--colorWhite);
+    }
+}
 
 /* .property .carousel-item{
     width: 100%;
